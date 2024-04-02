@@ -1,0 +1,159 @@
+.profile {
+  display: flex;
+  gap: 116px;
+  margin: 33px auto 0 auto;
+  max-width: 1440px;
+}
+
+.profile__content {
+  margin: 0 40px 0 40px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.profile__sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__info {
+  width: 336px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__avatar {
+  height: 56px;
+  width: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  margin: 0 16px 0 0;
+}
+
+.profile__note {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16px 0 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.profile__name {
+  font-weight: 700;
+  font-size: 20px;
+
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile__button {
+  height: 25px;
+  border: none;
+  background-color: #f3f3f3;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: start;
+  padding: 0;
+}
+
+.profile__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.profile__edit {
+  margin: 24px 0 0 0;
+  width: 201px;
+  background-color: white;
+}
+
+.profile__logout {
+  margin: 8px 0 0 0;
+  width: 80px;
+  background-color: white;
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+.profile__subcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profile__add-button {
+  margin: 0 0 2px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  background-color: white;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profile__add-button {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.profile__cards {
+  display: grid;
+  margin: 17px 0 0 0;
+  gap: 20px;
+  padding: 0;
+  grid-template-columns: repeat(3, 328px);
+  justify-self: end;
+}
+
+@media screen and (min-width: 375px) and (max-width: 822px) {
+  .profile {
+    max-width: 375px;
+  }
+
+  .profile__content {
+    margin: 0 16px 0 16px;
+    flex-direction: column;
+  }
+
+  .profile__sidebar {
+    justify-content: center;
+  }
+
+  .profile__info {
+    justify-content: center;
+  }
+
+  .profile__name {
+    width: 325px;
+  }
+
+  .profile__subcontainer {
+    justify-content: center;
+  }
+
+  .profile__cards {
+    display: grid;
+    margin: 17px 0 0 0;
+    gap: 20px;
+    padding: 0;
+    grid-template-columns: repeat(2, 164px);
+    justify-self: end;
+  }
+}

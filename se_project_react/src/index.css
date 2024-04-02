@@ -1,0 +1,31 @@
+@import url(./blocks/App.css);
+@import url(./blocks/Body.css);
+@import url(./blocks/Card.css);
+@import url(./blocks/Footer.css);
+@import url(./blocks/Header.css);
+@import url(./blocks/Main.css);
+@import url(./blocks/MobileMenu.css);
+@import url(./blocks/ModalWithForm.css);
+@import url(./blocks/ModalConfirm.css);
+@import url(./blocks/ItemModal.css);
+@import url(./blocks/Page.css);
+@import url(./blocks/Profile.css);
+@import url(./blocks/ToggleSwitch.css);
+@import url(./blocks/WeatherCard.css);
+@import url(./blocks/ClothesSection.css);
+@import url(./blocks/ItemCards.css);
+@import url(./blocks/SideBar.css);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

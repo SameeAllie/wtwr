@@ -1,0 +1,29 @@
+.clothes {
+  display: flex;
+  font-size: 16px;
+  font-family: "Familjen Grotesk", sans-serif;
+  gap: 16px;
+  margin-top: 16px;
+}
+.clothes__button {
+  line-height: 25px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-family: "Familjen Grotesk", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.clothes__button:hover {
+  color: rgba(0, 0, 0, 0.3);
+  transform: scale(105%);
+}
+
+.clothes__header {
+  font-size: 20px;
+  margin: 0;
+  align-self: center;
+}

@@ -1,0 +1,104 @@
+.switch {
+  display: flex;
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.switch__input {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.switch__label {
+  display: flex;
+  cursor: pointer;
+  width: 56px;
+  height: 28px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  transition: background-color 0.2s;
+  border: 2px solid #7e7e7e;
+  margin: 8px 20px 0 0;
+}
+
+.switch__button {
+  position: absolute;
+  z-index: 0;
+  left: 1px;
+  width: 28px;
+  height: 28px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #000;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.switch__input:checked + .switch__label .switch__button {
+  left: calc(100% - 1px);
+  transform: translateX(-100%);
+}
+
+.switch__label:active .switch__button {
+  width: 56px;
+}
+
+.switch__container {
+  width: 56px;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* .switch__slider-F {
+} */
+
+/* .switch__slider-C {
+} */
+
+.switch__temp-F {
+  z-index: 100;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.switch__temp-C {
+  z-index: 100;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 34px;
+  top: 0%;
+  bottom: 0%;
+  /* font-family: "Cabinet Grotesk"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.switch__active {
+  /* z-index: 100;
+  right: 2px; */
+  font-size: 15px;
+  color: #fff;
+  /* position: absolute; */
+}

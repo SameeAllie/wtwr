@@ -1,0 +1,87 @@
+/* .main {
+  padding: 0 20px;
+} */
+
+.main {
+  margin: 33px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  max-width: 1440px;
+}
+
+.main__container {
+  margin: 0 40px;
+}
+
+.main__clothing {
+  margin: 40px 0 0;
+}
+
+.main__text {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.main__button {
+  display: none;
+}
+
+.main__cards {
+  grid-gap: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 328px);
+  margin: 34px 0 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 375px) and (max-width: 822px) {
+  .main {
+    display: flex;
+    margin: 16px auto 0;
+    max-width: 375px;
+  }
+
+  .main__container {
+    margin: 0 16px;
+    width: 360px;
+  }
+
+  .main__clothing {
+    margin: 12px 14px 0 10px;
+  }
+
+  .main__text {
+    width: 340px;
+  }
+
+  .main__cards {
+    grid-template-columns: repeat(2, 164px);
+  }
+}
+
+@media screen and (min-width: 823px) and (max-width: 1440px) {
+  .main {
+    margin: 33px auto 0 auto;
+    max-width: 768px;
+  }
+
+  .main__container {
+    margin: 0 20px 0 20px;
+  }
+
+  .main__clothing {
+    margin: 20px 0 0 0;
+  }
+
+  .main__cards {
+    grid-template-columns: repeat(4, 164px);
+  }
+}

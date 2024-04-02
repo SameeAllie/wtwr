@@ -1,0 +1,219 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.header__left {
+  grid-gap: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto;
+  grid-template-rows: 40px;
+  margin: 0 0 0 40px;
+}
+
+.header__logo {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  height: 40px;
+  width: 89px;
+}
+
+.header__date {
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  grid-column: 2/2;
+  grid-row: 1/1;
+  line-height: 24px;
+  margin: 13px 0 0;
+}
+
+.header__button {
+  background-color: white;
+  display: none;
+  height: 44px;
+  margin: 0 16px 0 0;
+  width: 44px;
+}
+
+.header__right {
+  grid-gap: 12px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto;
+  grid-template-rows: 40px;
+  margin: 0 40px 0 0;
+}
+
+.header__add {
+  width: 116px;
+  left: 1015px;
+  top: 8px;
+
+  font-family: "Cabinet Grotesk";
+
+  color: #000000;
+  background-color: white;
+  border: none;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  grid-column: 2/2;
+  grid-row: 1/1;
+  line-height: 24px;
+  padding: 10px 0 0 0;
+}
+
+.header__add:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.header__link {
+  text-decoration: none;
+  list-style-type: none;
+  grid-column: 3/3;
+  grid-row: 1/1;
+  display: flex;
+  color: black;
+  padding: 0 0 24px 20px;
+}
+
+.header__link:visited {
+  color: #000;
+}
+
+.header__name {
+  height: 25px;
+
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 12px 20px 0 8px;
+  max-width: 200px;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+
+  color: #000000;
+}
+
+.header__avatar {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+}
+
+.header__letter-info {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 9px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header__login-info {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  display: flex;
+  color: #000;
+  margin-bottom: 7px;
+}
+
+.header__signup {
+  background-color: white;
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 8px 12px 0 0;
+  border: none;
+}
+
+.header__signup:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.header__login {
+  background-color: white;
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 8px 12px 0 8px;
+  border: none;
+}
+
+.header__login:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 822px) {
+  .header {
+    max-width: 375px;
+  }
+
+  .header__left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 12px;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .header__name {
+    max-width: 100px;
+  }
+
+  .header__button {
+    display: flex;
+    border: none;
+  }
+
+  .header__mobile-menu:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 823px) and (max-width: 1440px) {
+  .header {
+    max-width: 768px;
+    padding-top: 20px;
+  }
+
+  .header__left {
+    margin: 0 0 0 20px;
+  }
+
+  .header__right {
+    margin: 0 20px 0 0;
+  }
+
+  .header__name {
+    max-width: 100px;
+  }
+}
